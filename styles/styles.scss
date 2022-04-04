@@ -1,0 +1,52 @@
+@import './reset';
+@import './variables';
+
+body {
+    @include flex-center(column);
+}
+main {
+    padding: 6rem 0;
+}
+.card {
+    @include flex-center(column);
+    width: 327px;
+    height:1326px;
+    border-radius: 1rem;
+}
+.vehicles {
+    display:flex;
+    flex-direction: column;
+    height: 442px;
+    padding: 2.5rem;
+
+}
+img {
+    // width: 64px;
+    // height: 40px;
+    width: 26%;
+}
+.sedan {
+    background-color: $orange;
+    border-radius: 1rem 1rem 0 0;
+}
+.suv {
+    background-color: $cyan;
+}
+.luxury {
+    background-color: $dark-cyan;
+    border-radius: 0 0 1rem 1rem;
+}
+p {
+    font-family: $font-family-paragraph;
+    line-height: 1.4rem;
+}
+.vehicle-type {
+    font-family: $font-family-heading;
+}
+
+.vehicle-text {
+    color: $transparent-white;
+}
+.btn, .vehicle-type {
+    color: $light-gray;
+}

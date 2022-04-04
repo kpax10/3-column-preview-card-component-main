@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 6rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 1326px;
+  border-radius: 1rem;
+}
+
+.vehicles {
+  display: flex;
+  flex-direction: column;
+  height: 442px;
+  padding: 2.5rem;
+}
+
+img {
+  width: 26%;
+}
+
+.sedan {
+  background-color: hsl(31deg, 77%, 52%);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.suv {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0 0 1rem 1rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.4rem;
+}
+
+.vehicle-type {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.vehicle-text {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.btn, .vehicle-type {
+  color: hsl(0deg, 0%, 95%);
+}/*# sourceMappingURL=styles.css.map */
