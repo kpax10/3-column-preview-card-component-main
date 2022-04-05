@@ -70,6 +70,7 @@ p {
 
 .vehicle-heading {
   font-family: "Big Shoulders Display", cursive;
+  text-transform: capitalize;
   font-size: 2.6rem;
   padding-top: 2rem;
 }
@@ -105,6 +106,10 @@ p {
 @media (min-width: 1050px) {
   body {
     height: 100vh;
+  }
+
+  main {
+    padding: 0;
   }
 
   .vehicles {
