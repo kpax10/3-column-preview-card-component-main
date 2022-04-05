@@ -24,8 +24,6 @@ main {
 }
 
 img {
-    // width: 64px;
-    // height: 40px;
     width: 27%;
 }
 
@@ -101,14 +99,18 @@ p {
         height: 100vh;
     }
 
-    main {
-        padding: 0;
+    .vehicles {
+        height: 500px;
     }
 
     .card {
         @include flex-center(row);
         width: 920px;
         height: 500px;
+    }
+
+    .btn {
+        margin-top: 5rem;
     }
 
     .sedan {

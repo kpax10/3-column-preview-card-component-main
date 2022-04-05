@@ -103,8 +103,8 @@ p {
     height: 100vh;
   }
 
-  main {
-    padding: 0;
+  .vehicles {
+    height: 500px;
   }
 
   .card {
@@ -114,6 +114,10 @@ p {
     align-items: center;
     width: 920px;
     height: 500px;
+  }
+
+  .btn {
+    margin-top: 5rem;
   }
 
   .sedan {
