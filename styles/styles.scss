@@ -24,11 +24,11 @@ main {
     display: flex;
     flex-direction: column;
     height: 442px;
-    padding: 3rem;
+    padding: 2.5rem;
 }
 
 img {
-    width: 27%;
+    width: 28%;
 }
 
 .sedan {
@@ -64,30 +64,33 @@ p {
 
 .vehicle-heading {
     font-family: $font-family-heading;
-    text-transform: capitalize;
-    font-size: 2.6rem;
-    padding-top: 2rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-top: 1.8rem;
 }
 
 .vehicle-text {
     color: $transparent-white;
-    padding-top: 2rem;
-    line-height: 1.5rem;
+    padding-top: 1.2rem;
+    line-height: 1.3rem;
 
 }
 
-.btn,
 .vehicle-heading {
     color: $light-gray;
 }
 
 .btn {
     font-size: $font-size;
-    padding: 1rem;
+    font-family: $font-family-paragraph;
+    text-decoration: none;
+    text-align: center;
+    background-color: $light-gray;
+    padding: 0.6rem;
     border-radius: 5rem;
     border-style: none;
-    width: 9.3rem;
-    margin-top: 1.5rem;
+    width: 7.5rem;
+    margin-top: 1.2rem;
     border: solid 2px $light-gray;
 
     &:hover {
