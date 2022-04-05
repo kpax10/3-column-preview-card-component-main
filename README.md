@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/3-column-card-built-with-sass-H17VLSKXq](https://www.frontendmentor.io/solutions/3-column-card-built-with-sass-H17VLSKXq)
 - Live Site URL: [https://kpax10.github.io/3-column-preview-card-component-main/](https://kpax10.github.io/3-column-preview-card-component-main/)
 
 ## My process
