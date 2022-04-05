@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: hsl(0deg, 0%, 95%);
+}
+
 body {
   display: flex;
   flex-direction: column;

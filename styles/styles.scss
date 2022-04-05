@@ -1,6 +1,10 @@
 @import './reset';
 @import './variables';
 
+html {
+    background-color: $light-gray
+}
+
 body {
     @include flex-center(column);
 }
