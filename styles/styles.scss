@@ -4,49 +4,123 @@
 body {
     @include flex-center(column);
 }
+
 main {
     padding: 6rem 0;
+    font-size: $font-size;
 }
+
 .card {
     @include flex-center(column);
     width: 327px;
-    height:1326px;
-    border-radius: 1rem;
+    height: 1326px;
 }
+
 .vehicles {
-    display:flex;
+    display: flex;
     flex-direction: column;
     height: 442px;
-    padding: 2.5rem;
-
+    padding: 3rem;
 }
+
 img {
     // width: 64px;
     // height: 40px;
-    width: 26%;
+    width: 27%;
 }
+
 .sedan {
     background-color: $orange;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+
+    .btn {
+        color: $orange;
+    }
 }
+
 .suv {
     background-color: $cyan;
+
+    .btn {
+        color: $cyan;
+    }
 }
+
 .luxury {
     background-color: $dark-cyan;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    .btn {
+        color: $dark-cyan;
+    }
 }
+
 p {
     font-family: $font-family-paragraph;
     line-height: 1.4rem;
 }
-.vehicle-type {
+
+.vehicle-heading {
     font-family: $font-family-heading;
+    font-size: 2.6rem;
+    padding-top: 2rem;
 }
 
 .vehicle-text {
     color: $transparent-white;
+    padding-top: 2rem;
+    line-height: 1.5rem;
+
 }
-.btn, .vehicle-type {
+
+.btn,
+.vehicle-heading {
     color: $light-gray;
+}
+
+.btn {
+    font-size: $font-size;
+    padding: 1rem;
+    border-radius: 5rem;
+    border-style: none;
+    width: 9.3rem;
+    margin-top: 1.5rem;
+    border: solid 2px $light-gray;
+
+    &:hover {
+        background-color: inherit;
+        color: $light-gray;
+        border: solid 2px $light-gray;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+}
+
+@media (min-width: 1050px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .card {
+        @include flex-center(row);
+        width: 920px;
+        height: 500px;
+    }
+
+    .sedan {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .suv {
+        border-radius: 0;
+    }
+
+    .luxury {
+        border-radius: 0 0.5rem 0.5rem 0;
+
+    }
 }

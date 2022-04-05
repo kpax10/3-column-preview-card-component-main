@@ -13,6 +13,7 @@ body {
 
 main {
   padding: 6rem 0;
+  font-size: 15px;
 }
 
 .card {
@@ -22,32 +23,40 @@ main {
   align-items: center;
   width: 327px;
   height: 1326px;
-  border-radius: 1rem;
 }
 
 .vehicles {
   display: flex;
   flex-direction: column;
   height: 442px;
-  padding: 2.5rem;
+  padding: 3rem;
 }
 
 img {
-  width: 26%;
+  width: 27%;
 }
 
 .sedan {
   background-color: hsl(31deg, 77%, 52%);
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.sedan .btn {
+  color: hsl(31deg, 77%, 52%);
 }
 
 .suv {
   background-color: hsl(184deg, 100%, 22%);
 }
+.suv .btn {
+  color: hsl(184deg, 100%, 22%);
+}
 
 .luxury {
   background-color: hsl(179deg, 100%, 13%);
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.luxury .btn {
+  color: hsl(179deg, 100%, 13%);
 }
 
 p {
@@ -55,14 +64,67 @@ p {
   line-height: 1.4rem;
 }
 
-.vehicle-type {
+.vehicle-heading {
   font-family: "Big Shoulders Display", cursive;
+  font-size: 2.6rem;
+  padding-top: 2rem;
 }
 
 .vehicle-text {
   color: hsla(0deg, 0%, 100%, 0.75);
+  padding-top: 2rem;
+  line-height: 1.5rem;
 }
 
-.btn, .vehicle-type {
+.btn,
+.vehicle-heading {
   color: hsl(0deg, 0%, 95%);
+}
+
+.btn {
+  font-size: 15px;
+  padding: 1rem;
+  border-radius: 5rem;
+  border-style: none;
+  width: 9.3rem;
+  margin-top: 1.5rem;
+  border: solid 2px hsl(0deg, 0%, 95%);
+}
+.btn:hover {
+  background-color: inherit;
+  color: hsl(0deg, 0%, 95%);
+  border: solid 2px hsl(0deg, 0%, 95%);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@media (min-width: 1050px) {
+  body {
+    height: 100vh;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 920px;
+    height: 500px;
+  }
+
+  .sedan {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .suv {
+    border-radius: 0;
+  }
+
+  .luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

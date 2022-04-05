@@ -7,8 +7,10 @@ $light-gray: hsl(0, 0%, 95%);
 
 // Fonts
 $font-size: 15px;
-$font-family-heading: 'Big Shoulders Display', cursive;
-$font-family-paragraph: 'Lexend Deca', sans-serif;
+$font-family-heading: 'Big Shoulders Display',
+cursive;
+$font-family-paragraph: 'Lexend Deca',
+sans-serif;
 
 // Functions
 @mixin flex-center($direction) {
